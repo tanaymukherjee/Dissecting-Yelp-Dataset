@@ -14,8 +14,8 @@ In this portion, we will import the necessary dependencies (pandas and matplotli
 * ```Configuring the EMR cluster```
 ![EMR cluster](https://user-images.githubusercontent.com/6689256/80295460-c8846d00-8740-11ea-9604-27ad6366b1e9.png)
 
-* ```Loading data into S3 bucket```
-![Notebook instance](https://user-images.githubusercontent.com/6689256/80295472-df2ac400-8740-11ea-9000-b8c4ee0329ec.png)
+* ```Initiating notebook instance```
+![Notebook instance](https://user-images.githubusercontent.com/6689256/80295518-45174b80-8741-11ea-9b76-5feb1632698f.png)
 
 - [x] This module is completed
 
