@@ -38,3 +38,6 @@ We must flatten one dict at a time and then flatten each record before running a
 ## C) Loading data into S3 bucket
 ### 1. AWS S3 buck configuration
 ![s3 data bucket_csv](https://user-images.githubusercontent.com/6689256/80297017-7564e700-874d-11ea-8835-b8a818ed6c58.png)
+
+### 2. Calling the dataframe in a S3 object
+```df = spark.read.csv('s3://yelp-dataset-tm-csv/*.csv')```
