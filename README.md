@@ -8,6 +8,14 @@ This dataset is a subset of Yelp's businesses, reviews, and user data. It was or
 ```
 In this portion, we will import the necessary dependencies (pandas and matplotlib) and load your dataset as a pyspark dataframe.
 ```
+* ```Loading data into S3 bucket```
+![s3 data bucket](https://user-images.githubusercontent.com/6689256/80295489-ff5a8300-8740-11ea-90cf-35952dd30052.png)
+
+* ```Configuring the EMR cluster```
+![EMR cluster](https://user-images.githubusercontent.com/6689256/80295460-c8846d00-8740-11ea-9604-27ad6366b1e9.png)
+
+* ```Loading data into S3 bucket```
+![Notebook instance](https://user-images.githubusercontent.com/6689256/80295472-df2ac400-8740-11ea-9000-b8c4ee0329ec.png)
 
 - [x] This module is completed
 
@@ -17,7 +25,7 @@ In this portion, we will import the necessary dependencies (pandas and matplotli
 For this part, we will take a stab at denormalizing the categories that are associated with each business (there may be more than one, presented as a string of comma separated identifiers) and then running some basic analysis on the result.
 ```
 
-- [ ] This module is under progress
+- [x] This module is under progress
 
 
 ## Part 3: Do Yelp Reviews Skew Negative?
