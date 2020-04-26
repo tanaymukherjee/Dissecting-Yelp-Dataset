@@ -35,6 +35,17 @@ Thus, we have to write a complex loop structure to ensure the conversion is done
 We must flatten one dict at a time and then flatten each record before running a loop for the same
 ```
 
+
+## B) Run the file
+### 1. Generic Method:
+```python json_to_csv_generic.py yelp_academic_dataset_business.json yelp_academic_dataset_business.csv```
+
+### 2. Yelp Dataset Method:
+```json_to_csv_yelp.py yelp_academic_dataset_business.json yelp_academic_dataset_business.csv```
+
+**NOTE:** We have to repeat the process for each file JSON file now to get a CSV.
+
+
 ## C) Loading data into S3 bucket
 ### 1. AWS S3 buck configuration
 ![s3 data bucket_csv](https://user-images.githubusercontent.com/6689256/80297017-7564e700-874d-11ea-8835-b8a818ed6c58.png)
