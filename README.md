@@ -96,14 +96,15 @@ Memory: 500 GB
 * ```Tools Used:```
 ``` 
 Programming Language: Python (Version 3.7)
-Editor: Sublime Text (Version 3)
-Platform: Docker Desktop (Version 2.2.0.3)
-Shell: Git Bash (Version 2.25.1)
+Editor: Jupyter Notebook
+Platform: Amazon EMR (Elastic MapReduce)
 ```
 
 * ```Services Commissioned:```
 ``` 
 Cloud Platform: Amazon Web Services (AWS)
+Framework: Apache PySpark
+Version Control System: Git
 ```
 
 #### 2. Communication Channel
@@ -132,3 +133,6 @@ Session: Spring, 2020
 ```
 
 #### 2. Links
+- [Download Yelp Dataset](https://www.kaggle.com/yelp-dataset/yelp-dataset#yelp_academic_dataset_user.json)
+- [Converting JSON to CSV](https://medium.com/@gabrielpires/how-to-convert-a-json-file-to-csv-python-script-a9ff0a3f906e)
+- [PySpark Explode](https://sparkbyexamples.com/pyspark/pyspark-explode-array-and-map-columns-to-rows/)
