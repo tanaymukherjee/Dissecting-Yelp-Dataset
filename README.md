@@ -5,7 +5,7 @@ This dataset is a subset of Yelp's businesses, reviews, and user data. It was or
 
 
 ## Part 1: Installation and Initial Setup
-In this portion, we will import the necessary dependencies (pandas and matplotlib) and load your dataset as a pyspark dataframe.
+In this portion, we will import the necessary dependencies and load our dataset as a pyspark dataframe.
 
 ### A) Installation
 * ```Loading data into S3 bucket```
@@ -25,6 +25,10 @@ xyz
 * ```Loading data from S3 bucket```
 ``` 
 df = spark.read.json('s3://yelp-dataset-tm/*.json')
+```
+* ```Load and verify the dependencies```
+``` 
+sc.list_packages()
 ```
 * ```Overview of the dataset```
 ``` 
@@ -65,23 +69,22 @@ top_category.show(20,truncate=False)
 
 
 ## Part 3: Do Yelp Reviews Skew Negative?
-For this next part, you will attempt to answer the question: are the (written) reviews generally more pessimistic or more optimistic as compared to the overall business rating.
+For this next part, we will attempt to answer the question: 
+- Are the (written) reviews generally more pessimistic or more optimistic as compared to the overall business rating.
 
 - [ ] This module is under progress
 
 
 ## Part 4: Should the Elite be Trusted?
 For this final part we may choose to either answer this question posed or explore the data in some other manner of own own choosing. The only requirements are:
-●	You must leverage the users dataset provided
-●	You must have at least one data visualization as part of your analysis
+- We must leverage the users dataset provided
+- We must have at least one data visualization as part of your analysis
 
 - [ ] This module is not starterd yet
 
 
 ## Appendix
-```
 All the additional info about the project - the tools used, the servers required, system configuration, references, etc are included in this section.
-```
 
 ### A) Project Specifications
 
