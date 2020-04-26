@@ -4,3 +4,42 @@ This part is not part of the original exercise as wirth AWS S3 we can easily loa
 
 However, as part of analysis I converted JSON to CSV and it was a great learning experience. Though, the main analysis will be done using JSON only on EC2.
 
+## A) Methods to concert JSON to CSV
+### 1. Generic Method:
+
+* ```json_to_csv_generic.py```
+``` 
+It parses the json file by first identifying the encoding - whether it is UTF-8 encoding or a normal one.
+- First we read the JSON content
+- Then load an empty CSV file
+- Load the JSON content
+- Close the input file once we have read each key/value pair
+- Write in the CSV file
+```
+
+### 2. Yelp Dataset Method:
+
+* ```json_to_csv_yelp.py```
+``` 
+It parses the json file by first identifying the encoding - whether it is UTF-8 encoding or a normal one.
+- First we read the JSON content
+- Then load an empty CSV file
+- Load the JSON content
+- Close the input file once we have read each key/value pair
+- Write in the CSV file
+
+All the above steps are same as the generic one, however, the yelp dataset is a complex one, as there are dicts inside dicts
+
+Thus, we have to write a complex loop structure to ensure the conversion is done correctly.
+
+We must flatten one dict at a time and then flatten each record before running a loop for the same
+```
+
+## B) Run the file
+### 1. Generic Method:
+```python json_to_csv_generic.py yelp_academic_dataset_business.json yelp_academic_dataset_business.csv```
+
+### 2. Generic Method:
+```json_to_csv_yelp.py yelp_academic_dataset_business.json yelp_academic_dataset_business.csv```
+
+NOTE: We have to repeat the process for each file JSON file now to get a CSV.
