@@ -25,7 +25,7 @@ In this portion, we will import the necessary dependencies (pandas and matplotli
 For this part, we will take a stab at denormalizing the categories that are associated with each business (there may be more than one, presented as a string of comma separated identifiers) and then running some basic analysis on the result.
 ```
 
-- [x] This module is under progress
+- [x] This module is completed
 
 
 ## Part 3: Do Yelp Reviews Skew Negative?
@@ -33,7 +33,7 @@ For this part, we will take a stab at denormalizing the categories that are asso
 For this next part, you will attempt to answer the question: are the (written) reviews generally more pessimistic or more optimistic as compared to the overall business rating.
 ```
 
-- [ ] This module is not starterd yet
+- [ ] This module is under progress
 
 
 ## Part 4: Should the Elite be Trusted?
