@@ -1,4 +1,4 @@
-from src.bigdata1.api import get_results, raise_for_status
+from src.bigdata1.download import get_results, raise_for_status
 from requests import get
 import argparse
 
