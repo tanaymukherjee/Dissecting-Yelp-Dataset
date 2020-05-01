@@ -76,7 +76,23 @@ top_category.show(20,truncate=False)
 For this next part, we will attempt to answer the question: 
 - Are the (written) reviews generally more pessimistic or more optimistic as compared to the overall business rating.
 
-- [ ] This module is under progress
+* ```Calculate skewness```
+``` 
+temp1 = df.select('business_id', 'name', 'city', 'state', 'stars')
+join = temp1.join(avg_stars, on=['business_id'], how='inner')
+
+cols = [col for col in join.columns if col not in ['business_id']]
+join_res = join[cols]
+
+join_res = join_res.withColumn("skewness", (col("avg(stars)") - col("stars")) / col("stars"))
+```
+* ```Visualization of the skew distribution```
+![skew graph](https://user-images.githubusercontent.com/6689256/80843596-aec8a700-8bd2-11ea-85c4-ea215f2c10f2.png)
+
+* ```Additional Exercise: Word Cloud```
+![word cloud](https://user-images.githubusercontent.com/6689256/80843747-141c9800-8bd3-11ea-9033-a9cc0cdaa9fe.png)
+
+- [x] This module is completed
 
 
 ## Part 4: Should the Elite be Trusted?
@@ -84,7 +100,29 @@ For this final part we may choose to either answer this question posed or explor
 - We must leverage the users dataset provided
 - We must have at least one data visualization as part of your analysis
 
-- [ ] This module is not starterd yet
+* ```Joining Buisness, User and Review dataset```
+``` 
+business = df.select('business_id', 'city', 'state', 'stars').withColumnRenamed('stars', 'business_stars')
+review = df_rev.select('business_id', 'date', 'review_id', 'user_id', 'stars').withColumnRenamed('stars', 'review_stars')
+join_b_r = business.join(review, on=['business_id'], how='inner')
+join_b_r_u = join_b_r.join(user, on=['user_id'], how='inner')
+```
+* ```Cleaning of the data```
+``` 
+final = join_b_r_u.select('user_id', 'business_id', 'review_id', 'name', 'city', 'state', 'business_stars',
+                          'review_stars', 'average_stars', 'elite', 'fans', 'review_count',
+                         year(to_date(join_b_r_u.date, 'yyyy-MM-dd HH:mm:ss')).alias('review_year'),
+                          year(to_date(join_b_r_u.yelping_since, 'yyyy-MM-dd HH:mm:ss')).alias('yelping_since'))
+```
+* ```Categorizing Elite and Non-elite users```
+``` 
+non_elite = final.filter(final.elite == '')
+elite = final.filter(final.elite != '')
+```
+* ```Visualization: Elite v/s Non-Elite User Ratings```
+![elite vs non_elite](https://user-images.githubusercontent.com/6689256/80844007-a7ee6400-8bd3-11ea-8298-c4582d745e93.png)
+
+- [x] This module is completed
 
 
 ## Appendix
