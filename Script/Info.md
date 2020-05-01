@@ -1,4 +1,4 @@
-# Automating data directly into S3 using Kaggle APIs
+# Automating data upload directly into S3 using Kaggle APIs
 
 ## Additional Exercise
 *This is an extra credit exercise for this project.*
