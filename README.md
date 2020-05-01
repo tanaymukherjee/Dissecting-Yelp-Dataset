@@ -20,7 +20,11 @@ In this portion, we will import the necessary dependencies and load our dataset 
 ### B) Initial Setup
 * ```Notebook Location```
 ``` 
-xyz
+https://e-8n5tqmthd2908buqkudp1rlh2.emrnotebooks-prod.us-east-2.amazonaws.com/e-8N5TQMTHD2908BUQKUDP1RLH2/notebooks/Analysis.ipynb
+```
+* ```Initiating the pyspark kernel```
+``` 
+%%info
 ```
 * ```Loading data from S3 bucket```
 ``` 
