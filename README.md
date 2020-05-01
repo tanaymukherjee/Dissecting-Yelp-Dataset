@@ -3,6 +3,7 @@
 
 This dataset is a subset of Yelp's businesses, reviews, and user data. It was originally put together for the Yelp Dataset Challenge which is a chance for students to conduct research or analysis on Yelp's data and share their discoveries. In the dataset you'll find information about businesses across 11 metropolitan areas in four countries.
 
+Highlights from each part of the exercise is shared below with relevant code snippets and visualizations. For more details, please look at the 'Analysis' notebook under the 'Final Submission' folder, [here](https://github.com/tanaymukherjee/Dissecting-Yelp-Dataset/blob/master/Final%20Submission/Analysis.ipynb).
 
 ## Part 1: Installation and Initial Setup
 In this portion, we will import the necessary dependencies and load our dataset as a pyspark dataframe.
@@ -124,6 +125,11 @@ elite = final.filter(final.elite != '')
 
 - [x] This module is completed
 
+
+## Extra Credit: Automating data upload directly into S3 using Kaggle APIs
+To write a python or bash script that leverages the kaggle API module to download the dataset and the AWS boto3 module to upload to S3. This script must run in a docker container and it should work for anyone’s AWS and Kaggle accounts for any dataset.
+
+All the neccesary info is available [here](https://github.com/tanaymukherjee/Dissecting-Yelp-Dataset/blob/master/Script/Info.md)
 
 ## Appendix
 All the additional info about the project - the tools used, the servers required, system configuration, references, etc are included in this section.
