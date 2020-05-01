@@ -181,3 +181,4 @@ Session: Spring, 2020
 - [Download Yelp Dataset](https://www.kaggle.com/yelp-dataset/yelp-dataset#yelp_academic_dataset_user.json)
 - [Converting JSON to CSV](https://medium.com/@gabrielpires/how-to-convert-a-json-file-to-csv-python-script-a9ff0a3f906e)
 - [PySpark Explode](https://sparkbyexamples.com/pyspark/pyspark-explode-array-and-map-columns-to-rows/)
+- [Text Analytics in PySpark](https://github.com/nicharuc/yelp-sentiment-prediction/blob/master/yelp_nlp_svm.md)
