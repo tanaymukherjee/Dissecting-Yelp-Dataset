@@ -129,7 +129,7 @@ elite = final.filter(final.elite != '')
 ## Extra Credit: Automating data upload directly into S3 using Kaggle APIs
 To write a python or bash script that leverages the kaggle API module to download the dataset and the AWS boto3 module to upload to S3. This script must run in a docker container and it should work for anyone’s AWS and Kaggle accounts for any dataset.
 
-All the neccesary info is available [here](https://github.com/tanaymukherjee/Dissecting-Yelp-Dataset/blob/master/Script/Info.md)
+All the neccesary info is available [here](https://github.com/tanaymukherjee/Dissecting-Yelp-Dataset/blob/master/Script/Info.md).
 
 ## Appendix
 All the additional info about the project - the tools used, the servers required, system configuration, references, etc are included in this section.
