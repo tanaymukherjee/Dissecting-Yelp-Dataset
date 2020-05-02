@@ -122,6 +122,8 @@ elite = final.filter(final.elite != '')
 ```
 * ```Visualization: Elite v/s Non-Elite User Ratings```
 ![elite vs non_elite](https://user-images.githubusercontent.com/6689256/80844007-a7ee6400-8bd3-11ea-8298-c4582d745e93.png)
+* ```Visualization: Average star rating difference```
+![average star rating difference](https://user-images.githubusercontent.com/6689256/80870840-f43eb000-8c76-11ea-8966-ec990b140cfb.png)
 
 - [x] This module is completed
 
