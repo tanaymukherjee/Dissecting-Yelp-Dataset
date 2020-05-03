@@ -3,7 +3,7 @@
 
 This dataset is a subset of Yelp's businesses, reviews, and user data. It was originally put together for the Yelp Dataset Challenge which is a chance for students to conduct research or analysis on Yelp's data and share their discoveries. In the dataset you'll find information about businesses across 11 metropolitan areas in four countries.
 
-Highlights from each part of the exercise is shared below with relevant code snippets and visualizations. For more details, please look at the 'Analysis' notebook under the 'Final Submission' folder, [here](https://github.com/tanaymukherjee/Dissecting-Yelp-Dataset/blob/master/Final%20Submission/Analysis.ipynb).
+Highlights from each part of the exercise is shared below with relevant code snippets and visualizations. For more details, please look at the 'Analysis' notebook under the root folder, [here](https://github.com/tanaymukherjee/Dissecting-Yelp-Dataset/blob/master/Analysis.ipynb).
 
 ## Part 1: Installation and Initial Setup
 In this portion, we will import the necessary dependencies and load our dataset as a pyspark dataframe.
